@@ -22,11 +22,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       navigatorKey: globalNavigatorKey,
       theme: ThemeData.dark(),
-      home: Builder(
-        builder: (context) => Fluto(
-          globalNavigatorKey: globalNavigatorKey,
-          child: const HomePage(),
-        ),
+      home: Fluto(
+        globalNavigatorKey: globalNavigatorKey,
+        child: const HomePage(),
       ),
     );
   }
